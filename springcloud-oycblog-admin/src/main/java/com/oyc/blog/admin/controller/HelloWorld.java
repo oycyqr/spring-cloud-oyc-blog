@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  * @Date 2020/12/30 11:48 下午
  */
 @RestController
-@RequestMapping("admin")
+@RequestMapping
 @Slf4j
 public class HelloWorld {
     @Autowired
