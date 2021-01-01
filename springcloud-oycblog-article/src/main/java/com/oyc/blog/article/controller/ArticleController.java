@@ -5,14 +5,12 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.api.ApiController;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.oyc.blog.article.entity.Article;
 import com.oyc.blog.article.service.ArticleService;
-import com.oyc.blog.core.domain.JsonResult;
+import com.oyc.blog.common.domain.Article;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
-import java.sql.ResultSet;
 import java.util.List;
 
 /**

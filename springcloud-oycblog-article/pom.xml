@@ -18,18 +18,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.oyc.blog.core</groupId>
-            <artifactId>springcloud-oycblog-core</artifactId>
-            <version>${oycblog.version}</version>
+            <groupId>com.oyc.blog.common</groupId>
+            <artifactId>springcloud-oycblog-common-communal</artifactId>
+            <version>1.0.1</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
         <dependency>
@@ -73,6 +70,8 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus-stater.version}</version>
         </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>

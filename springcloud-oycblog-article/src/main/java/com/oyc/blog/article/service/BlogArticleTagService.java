@@ -1,7 +1,7 @@
 package com.oyc.blog.article.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.oyc.blog.article.entity.BlogArticleTag;
+import com.oyc.blog.common.domain.BlogArticleTag;
 
 /**
  * 文章标签表对应表(BlogArticleTag)表服务接口

@@ -1,7 +1,7 @@
 package com.oyc.blog.article.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.oyc.blog.article.entity.Article;
+import com.oyc.blog.common.domain.Article;
 
 /**
  * 文章表(Article)表数据库访问层

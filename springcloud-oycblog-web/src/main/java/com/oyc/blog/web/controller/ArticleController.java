@@ -1,8 +1,7 @@
 package com.oyc.blog.web.controller;
 
 import com.baomidou.mybatisplus.extension.api.R;
-import com.oyc.blog.api.client.ArticleClient;
-import com.oyc.blog.core.domain.JsonResult;
+import com.oyc.blog.common.client.ArticleClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

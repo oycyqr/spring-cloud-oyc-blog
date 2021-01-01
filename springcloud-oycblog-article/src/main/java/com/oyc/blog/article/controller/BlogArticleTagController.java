@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.api.ApiController;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.oyc.blog.article.entity.BlogArticleTag;
+import com.oyc.blog.common.domain.BlogArticleTag;
 import com.oyc.blog.article.service.BlogArticleTagService;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,7 @@ import java.util.List;
  * @since 2020-12-31 16:47:35
  */
 @RestController
-@RequestMapping("blogArticleTag")
+@RequestMapping("articleTag")
 public class BlogArticleTagController extends ApiController {
     /**
      * 服务对象

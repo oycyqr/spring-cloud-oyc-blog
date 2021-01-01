@@ -1,7 +1,7 @@
 package com.oyc.blog.article.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.oyc.blog.article.entity.Article;
+import com.oyc.blog.common.domain.Article;
 
 /**
  * 文章表(Article)表服务接口

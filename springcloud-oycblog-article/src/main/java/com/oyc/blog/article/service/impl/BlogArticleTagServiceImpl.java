@@ -2,7 +2,7 @@ package com.oyc.blog.article.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.oyc.blog.article.dao.BlogArticleTagDao;
-import com.oyc.blog.article.entity.BlogArticleTag;
+import com.oyc.blog.common.domain.BlogArticleTag;
 import com.oyc.blog.article.service.BlogArticleTagService;
 import org.springframework.stereotype.Service;
 

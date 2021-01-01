@@ -15,8 +15,9 @@
     <version>1.0.1</version>
 
     <modules>
-        <module>springcloud-api-system</module>
-        <module>springcloud-oycblog-core</module>
+        <module>springcloud-oycblog-common-communal</module>
+        <module>springcloud-oycblog-common-api</module>
+        <module>springcloud-oycblog-common-core</module>
     </modules>
 
 
