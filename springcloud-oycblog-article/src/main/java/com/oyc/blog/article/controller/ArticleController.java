@@ -7,10 +7,12 @@ import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.oyc.blog.article.entity.Article;
 import com.oyc.blog.article.service.ArticleService;
+import com.oyc.blog.core.domain.JsonResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
+import java.sql.ResultSet;
 import java.util.List;
 
 /**
@@ -36,7 +38,7 @@ public class ArticleController extends ApiController {
      * @return 所有数据
      */
     @GetMapping
-    public R selectAll(Page<Article> page, Article article) {
+    public JsonResult selectAll(Page<Article> page, Article article) {
         return success(this.articleService.page(page, new QueryWrapper<>(article)));
     }
 
