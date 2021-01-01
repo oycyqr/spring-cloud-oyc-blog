@@ -1,5 +1,6 @@
 package com.oyc.blog.web.controller;
 
+import com.baomidou.mybatisplus.extension.api.R;
 import com.oyc.blog.api.client.ArticleClient;
 import com.oyc.blog.core.domain.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class ArticleController {
 
     @Autowired
-    private ArticleClient1 articleClient1;
+    private ArticleClient articleClient;
 
     @GetMapping
-    public JsonResult list(){
-        JsonResult hello = articleClient1.hello();
-        System.out.println(hello);
-        JsonResult jsonResult = articleClient1.selectAll();
+    public R list(){
+        try {
+            R hello = articleClient.hello();
+            System.out.println(hello);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        R jsonResult = articleClient.selectAll();
         return jsonResult;
     }
 }

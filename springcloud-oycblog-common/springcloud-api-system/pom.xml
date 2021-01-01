@@ -21,6 +21,7 @@
         <dependency>
             <groupId>com.oyc.blog.core</groupId>
             <artifactId>springcloud-oycblog-core</artifactId>
+            <version>${oycblog.version}</version>
         </dependency>
     </dependencies>
 

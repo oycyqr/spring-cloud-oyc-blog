@@ -27,8 +27,8 @@ public class HelloController extends ApiController {
      * @return test hello
      */
     @GetMapping
-    public String hello() {
-        return "hello from article";
+    public R hello() {
+        return R.ok("hello from article");
     }
 
 }

@@ -1,6 +1,6 @@
 package com.oyc.blog.api.client;
 
-import com.oyc.blog.core.domain.JsonResult;
+import com.baomidou.mybatisplus.extension.api.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ArticleClient {
 
     @GetMapping("/article")
-    JsonResult selectAll();
+    R selectAll();
 
     @GetMapping("/hello")
-    JsonResult hello();
+    R hello();
 }

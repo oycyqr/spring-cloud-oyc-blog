@@ -38,7 +38,7 @@ public class ArticleController extends ApiController {
      * @return 所有数据
      */
     @GetMapping
-    public JsonResult selectAll(Page<Article> page, Article article) {
+    public R selectAll(Page<Article> page, Article article) {
         return success(this.articleService.page(page, new QueryWrapper<>(article)));
     }
 

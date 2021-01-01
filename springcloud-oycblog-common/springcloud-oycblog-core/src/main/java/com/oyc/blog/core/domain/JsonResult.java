@@ -14,7 +14,7 @@ import java.util.List;
  * @Description: http json结果集
  */
 @Data
-public class JsonResult extends R implements Serializable {
+public class JsonResult implements Serializable {
 
     /**
      * 定义jackson对象

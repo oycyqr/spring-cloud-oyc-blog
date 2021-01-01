@@ -6,7 +6,6 @@
         <artifactId>spring-cloud-oyc-blog</artifactId>
         <groupId>com.oyc.blog</groupId>
         <version>1.0.1</version>
-        <relativePath/>
     </parent>
 
     <groupId>com.oyc.blog.gateway</groupId>
