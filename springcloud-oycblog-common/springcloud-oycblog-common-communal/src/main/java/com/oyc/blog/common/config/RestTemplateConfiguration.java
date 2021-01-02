@@ -1,4 +1,4 @@
-package com.oyc.blog.web.config;
+package com.oyc.blog.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

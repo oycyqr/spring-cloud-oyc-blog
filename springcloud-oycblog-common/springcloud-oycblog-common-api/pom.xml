@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oyc.blog.api</groupId>
-    <artifactId>springcloud-api-system</artifactId>
+    <artifactId>springcloud-oycblog-common-api</artifactId>
     <version>1.0.1</version>
 
     <description>
@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>com.oyc.blog.common</groupId>
-            <artifactId>springcloud-oycblog-common-common</artifactId>
+            <artifactId>springcloud-oycblog-common-communal</artifactId>
             <version>${oycblog.version}</version>
         </dependency>
     </dependencies>

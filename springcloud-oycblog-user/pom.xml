@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.oyc.blog.common</groupId>
             <artifactId>springcloud-oycblog-common-communal</artifactId>
-            <version>1.0.1</version>
+            <version>${oycblog.version}</version>
             <scope>compile</scope>
         </dependency>
 

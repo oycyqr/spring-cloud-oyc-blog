@@ -14,23 +14,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <!-- SpringCloud Openfeign -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>com.oyc.blog.api</groupId>
+            <artifactId>springcloud-oycblog-common-api</artifactId>
+            <version>${oycblog.version}</version>
         </dependency>
 
         <dependency>
@@ -62,7 +48,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.oyc.blog.admin.SpringcloudOycblogAdminApplication</mainClass>
+                    <mainClass>com.oyc.blog.admin.SpringCloudOycBlogAdminApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

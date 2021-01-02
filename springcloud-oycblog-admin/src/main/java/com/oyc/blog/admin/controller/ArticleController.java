@@ -1,10 +1,11 @@
 package com.oyc.blog.admin.controller;
 
-import com.oyc.blog.admin.client.ArticleClient;
+import com.baomidou.mybatisplus.extension.api.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.oyc.blog.api.feign.ArticleClient;
 
 /**
  * @ClassName: ArticleController
@@ -21,7 +22,7 @@ public class ArticleController {
 
     @GetMapping
     public Object list(){
-        String hello = articleClient.hello();
+        R hello = articleClient.hello();
         System.out.println(hello);
         return articleClient.selectAll();
     }

@@ -1,21 +1,20 @@
-package com.oyc.blog.admin.client;
+package com.oyc.blog.api.feign;
 
+import com.baomidou.mybatisplus.extension.api.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * @ClassName: ArticleClient
- * @Description: ArticleClient
+ * @Description:
  * @Author oyc
- * @Date 2020/12/31 17:01
- * @Version 1.0
+ * @Date 2021/1/1 11:28 下午
  */
 @FeignClient("springcloud-oycblog-article")
 public interface ArticleClient {
 
     @GetMapping("/article")
-    Object selectAll();
+    R selectAll();
 
     @GetMapping("/hello")
-    String hello();
+    R hello();
 }
