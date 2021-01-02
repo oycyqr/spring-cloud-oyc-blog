@@ -1,8 +1,8 @@
 package com.oyc.blog.core.controller;
 
 import com.oyc.blog.core.domain.JsonResult;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.mybatis.logging.Logger;
+import org.mybatis.logging.LoggerFactory;
 
 /**
  * @Description:

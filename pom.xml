@@ -48,13 +48,6 @@
 
         <feignClients.version>2.0.4.RELEASE</feignClients.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
-    </dependencies>
 
     <!-- 依赖声明 -->
     <dependencyManagement>
