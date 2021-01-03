@@ -1,7 +1,7 @@
 package com.oyc.blog.web.controller;
 
 import com.baomidou.mybatisplus.extension.api.R;
-import com.oyc.blog.api.feign.ArticleClient;
+import com.oyc.blog.api.feign.UserClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,26 +13,27 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2021/1/1 2:49 下午
  */
 @RestController
-@RequestMapping("article")
-public class ArticleController {
+@RequestMapping("user")
+public class UserController {
 
     @Autowired
-    private ArticleClient articleClient;
+    private UserClient userClient;
 
     @GetMapping
-    public R list(){
+    public R list() {
         try {
-            R hello = articleClient.hello();
+            R hello = userClient.hello();
             System.out.println(hello);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        R jsonResult = null;
         try {
-            jsonResult = articleClient.list();
+            R jsonResult = userClient.list();
+            System.out.println(jsonResult);
+            return jsonResult;
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return jsonResult;
+        return null;
     }
 }

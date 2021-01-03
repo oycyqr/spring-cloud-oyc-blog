@@ -28,6 +28,10 @@ public class ArticleController extends ApiController {
     @Resource
     private ArticleService articleService;
 
+    @GetMapping("list")
+    public R list() {
+        return success(this.articleService.list());
+    }
     /**
      * 分页查询所有数据
      *

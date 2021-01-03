@@ -45,6 +45,8 @@
         <mybatis-plus-stater.version>3.1.2</mybatis-plus-stater.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
         <elasticsearch.version>3.2.6.RELEASE</elasticsearch.version>
+
+        <fastjson.version>1.2.54</fastjson.version>
     </properties>
 
     <!-- 依赖声明 -->

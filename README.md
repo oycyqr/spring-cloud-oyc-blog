@@ -1,6 +1,7 @@
 # 工程简介
 
-
+启动sentinel：
+java -Dserver.port=8849 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.6.3.jar
 
 # 延伸阅读
 

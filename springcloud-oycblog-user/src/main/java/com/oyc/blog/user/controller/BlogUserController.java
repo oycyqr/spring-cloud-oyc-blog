@@ -1,7 +1,6 @@
 package com.oyc.blog.user.controller;
 
 
-
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.api.ApiController;
 import com.baomidou.mybatisplus.extension.api.R;
@@ -29,10 +28,16 @@ public class BlogUserController extends ApiController {
     @Resource
     private BlogUserService blogUserService;
 
+    @GetMapping("list")
+    public R list() {
+        return success(this.blogUserService.list());
+    }
+
+
     /**
      * 分页查询所有数据
      *
-     * @param page 分页对象
+     * @param page     分页对象
      * @param blogUser 查询实体
      * @return 所有数据
      */

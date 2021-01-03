@@ -4,6 +4,10 @@ spring:
   application:
     name: springcloud-oycblog-user
   cloud:
+    sentinel: # Sentinel配置
+      transport:
+        dashboard: l146.56.192.87:8849 #Sentinel 地址
+        eager: true
     nacos:
       discovery:
         namespace: public

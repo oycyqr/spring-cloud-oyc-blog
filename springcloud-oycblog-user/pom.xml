@@ -20,6 +20,13 @@
             <groupId>com.oyc.blog.common</groupId>
             <artifactId>springcloud-oycblog-common-communal</artifactId>
         </dependency>
+        <!--sentinel-->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>0.2.2.RELEASE</version>
+        </dependency>-->
+        <!--sentinel end-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
