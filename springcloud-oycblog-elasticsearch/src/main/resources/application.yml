@@ -1,5 +1,7 @@
 server:
   port: 8102
+  servlet:
+    context-path: /search
 spring:
   application:
     name: springcloud-oycblog-search
@@ -10,3 +12,9 @@ spring:
         password: nacos
         server-addr: 146.56.192.87:8848
         username: nacos
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 146.56.192.87:9300
+      repositories:
+        enabled: true
