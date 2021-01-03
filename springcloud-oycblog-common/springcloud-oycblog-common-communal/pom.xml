@@ -19,7 +19,6 @@
         <dependency>
             <groupId>com.oyc.blog.core</groupId>
             <artifactId>springcloud-oycblog-common-core</artifactId>
-            <version>${oycblog.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-discovery -->

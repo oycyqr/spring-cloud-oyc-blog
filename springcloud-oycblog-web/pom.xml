@@ -16,9 +16,13 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.oyc.blog.api</groupId>
             <artifactId>springcloud-oycblog-common-api</artifactId>
-            <version>${oycblog.version}</version>
         </dependency>
 
         <dependency>

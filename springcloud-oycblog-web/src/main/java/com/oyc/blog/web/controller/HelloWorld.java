@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
  * @Date 2020/12/30 11:48 下午
  */
 @RestController
-@RequestMapping("web")
+@RequestMapping("hello")
 @Slf4j
 public class HelloWorld {
     @Autowired
@@ -32,7 +32,7 @@ public class HelloWorld {
         return "Invoke : " + url + ", return : " + result;
     }*/
 
-    @GetMapping("hello")
+    @GetMapping
     public String hello() {
         log.info("invoked Hello World");
         return "oyc blog web HelloWorld";

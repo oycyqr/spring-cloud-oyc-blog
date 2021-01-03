@@ -19,8 +19,6 @@
         <dependency>
             <groupId>com.oyc.blog.common</groupId>
             <artifactId>springcloud-oycblog-common-communal</artifactId>
-            <version>${oycblog.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -32,8 +30,6 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

@@ -27,7 +27,6 @@
         <dependency>
             <groupId>com.oyc.blog.common</groupId>
             <artifactId>springcloud-oycblog-common-communal</artifactId>
-            <version>${oycblog.version}</version>
         </dependency>
     </dependencies>
 

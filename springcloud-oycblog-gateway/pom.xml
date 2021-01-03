@@ -19,7 +19,6 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>${spring-cloud-alibaba.version}</version>
         </dependency>
 
         <dependency>
@@ -46,7 +45,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.oyc.blog.gateway.SpringcloudOycblogGatewayApplication</mainClass>
+                    <mainClass>com.oyc.blog.gateway.SpringCloudOycBlogGateWayApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

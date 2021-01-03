@@ -1,0 +1,12 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: springcloud-oycblog-search
+  cloud:
+    nacos:
+      discovery:
+        namespace: public
+        password: nacos
+        server-addr: 146.56.192.87:8848
+        username: nacos

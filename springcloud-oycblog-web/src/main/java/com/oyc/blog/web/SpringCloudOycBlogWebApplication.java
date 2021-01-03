@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
  * @author ouyangcheng
  */
 @SpringBootApplication
-@EnableDiscoveryClient
 @EnableFeignClients("com.oyc.blog.api.feign")
 @ComponentScan(basePackages = {"com.oyc.blog.common","com.oyc.blog.web","com.oyc.blog.api"})
 public class SpringCloudOycBlogWebApplication {

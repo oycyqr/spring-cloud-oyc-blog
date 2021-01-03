@@ -69,7 +69,28 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>3.3.0</version>
+                <scope>compile</scope>
+            </dependency>
 
+            <dependency>
+                <groupId>com.oyc.blog.core</groupId>
+                <artifactId>springcloud-oycblog-common-core</artifactId>
+                <version>${oycblog.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.oyc.blog.common</groupId>
+                <artifactId>springcloud-oycblog-common-communal</artifactId>
+                <version>${oycblog.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.oyc.blog.api</groupId>
+                <artifactId>springcloud-oycblog-common-api</artifactId>
+                <version>${oycblog.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
