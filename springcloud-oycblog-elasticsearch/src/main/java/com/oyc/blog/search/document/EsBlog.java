@@ -22,18 +22,10 @@ public class EsBlog {
      * 是否分词: 表示搜索的时候是整体匹配还是单词匹配
      * 是否存储: 是否在页面上显示
      */
-    @Field(index = true, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
+    //@Field(index = true, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String title;
 
-    @Field(analyzer = "ik_smart", searchAnalyzer = "ik_smart")
+    //@Field(analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String content;
 
-    public EsBlog() {
-    }
-
-    public EsBlog(int id, String title, String content) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-    }
 }
