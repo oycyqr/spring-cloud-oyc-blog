@@ -1,6 +1,7 @@
 package com.oyc.blog.user.controller;
 
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.api.ApiController;
 import com.baomidou.mybatisplus.extension.api.R;
@@ -29,6 +30,7 @@ public class BlogUserController extends ApiController {
     private BlogUserService blogUserService;
 
     @GetMapping("list")
+    @SentinelResource("user")
     public R list() {
         return success(this.blogUserService.list());
     }
